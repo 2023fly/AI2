@@ -7,6 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    var grassImages = $(".animation img");
+        function fadeOutFadeIn() {
+        grassImages.fadeOut(500, function() {
+        grassImages.fadeIn(500);
+            });
+          }
+          setInterval(fadeOutFadeIn, 2000);
+        });
+        </script>
+        
+    
+      
+        
+   
     <style>
         .items {
           list-style: none;
@@ -25,6 +42,7 @@
     
 </head>
 <body>
+    <div class="wrap">
 <div class="first-container">
     <div class="first-header">
     <a href="">
@@ -48,7 +66,17 @@
        </button>
     </a>
    </div>
-</div> 
+   <div class="animation">
+    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+        alt="grass">
+    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+        alt="grass">
+    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023web-camp/deco.png"
+        alt="grass">
+</div>
+</div>
+
+</div>
 </div>   
 </body>
 </html>
